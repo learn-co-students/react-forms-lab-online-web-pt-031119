@@ -18,6 +18,7 @@ class LoginForm extends React.Component {
   }
 
   validate = (event) => {
+    event.preventDefault()
     let name = this.state.username;
     let password = this.state.password;
 
