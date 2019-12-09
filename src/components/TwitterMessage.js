@@ -11,10 +11,10 @@ class TwitterMessage extends React.Component {
   }
 
   handleMsgChange = (event) => {
-    let input = event.target.value
+    let targetValue = event.target.value
     this.setState({
       message: input,
-      charsLeft: this.props.maxChars - input.length
+      charsLeft: this.props.maxChars - targetValue.length
     })
   }
 
@@ -31,3 +31,4 @@ class TwitterMessage extends React.Component {
 }
 
 export default TwitterMessage;
+
